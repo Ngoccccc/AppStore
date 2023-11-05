@@ -11,9 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ListExamples"
-        tools:targetApi="31">
+        tools:targetApi="34">
+
+
         <activity
             android:name=".ThirdActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SecondActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,17 +27,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SecondActivity"
-            android:exported="true">
-        </activity>
-        <activity
             android:name=".GridImageActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".HorizontalListActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".StoreActivity"
             android:exported="true" />
     </application>
 
